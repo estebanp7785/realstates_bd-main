@@ -25,6 +25,7 @@ public class RealStatesServiceImpl implements RealStatesService{
     }
 
     @Override
+    @Transactional
     public RealState getRealState(Long id) throws RealStateExcepction {
         return this.repository.getRealStateById(id);
     }
